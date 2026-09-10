@@ -1,2 +1,54 @@
 # roblox-lua-module-2026
-This module provides a collection of Lua scripts designed for Roblox game development. It is used by developers and modders to enhance game functionality and streamline development processes. One key feature is the ability to automate common tasks, such as character movement and collision detection, saving developers valuable time.
+
+A versatile Lua module for Roblox developers, designed to simplify common tasks and enhance the development experience.
+
+## Description
+
+`roblox-lua-module-2026` is a powerful and easy-to-use Lua module for Roblox game development. It provides a collection of utility functions and classes that streamline various aspects of game development, from player management to GUI creation and more.
+
+## Features
+
+- **Player Management**: Easily handle player joins, leaves, and other player-related events.
+- **GUI Creation**: Simplified methods for creating and managing GUIs.
+- **Data Persistence**: Store and retrieve player data efficiently.
+- **Event Handling**: Streamlined event management for better code organization.
+- **Animation Control**: Simplified animation control for characters and other objects.
+- **Physics Utilities**: Helpful functions for working with Roblox's physics system.
+
+## Installation
+
+To install `roblox-lua-module-2026`, follow these steps:
+
+1. **Download the module**: Clone or download the repository to your local machine.
+2. **Import the module**: In your Roblox game, create a `ModuleScript` and name it `roblox-lua-module-2026`.
+3. **Copy the code**: Copy the contents of the downloaded repository into the `ModuleScript`.
+4. **Require the module**: In your game scripts, require the module using `local Module = require(game:GetService("ServerScriptService"):WaitForChild("roblox-lua-module-2026"))`.
+
+## Usage Example
+
+Here's a simple example of how to use `roblox-lua-module-2026` to handle player joins:
+
+```lua
+local Module = require(game:GetService("ServerScriptService"):WaitForChild("roblox-lua-module-2026"))
+
+-- Initialize the player manager
+local playerManager = Module.PlayerManager.new()
+
+-- Set up a function to handle player joins
+playerManager.onPlayerAdded(function(player)
+    print(player.Name .. " has joined the game!")
+end)
+
+-- Set up a function to handle player leaves
+playerManager.onPlayerRemoving(function(player)
+    print(player.Name .. " has left the game!")
+end)
+```
+
+## Configuration
+
+`roblox-lua-module-2026` does not require any specific configuration. However, you can customize the behavior of certain functions by passing optional parameters. Refer to the module's documentation for more details.
+
+## License
+
+`roblox-lua-module-2026` is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
