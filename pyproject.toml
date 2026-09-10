@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roblox-lua-module-2026"
+version = "0.1.0"
+description = "This module provides a collection of Lua scripts designed for Roblox game development. It is used by developers and modders to enhance game functionality and streamline development processes. One key "
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "john-kim-io04t5" }]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+roblox_lua_module_2026 = "roblox_lua_module_2026.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
